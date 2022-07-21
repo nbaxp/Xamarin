@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import { ref, defineProps } from "vue";
+import { ref } from "vue";
 defineProps({
     name: String,
     icon: String,

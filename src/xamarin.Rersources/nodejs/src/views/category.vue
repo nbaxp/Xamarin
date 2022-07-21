@@ -59,16 +59,7 @@ onBeforeUpdate(() => {
 });
 
 const onLeftClick = (e, i) => {
-    leftRef.value.scrollHeight;
-    rightRef.value.scrollTo(0, rightRefs[i - 1].offsetTop);
-    setTimeout(() => {
-        if (!e.target.classList.contains("active")) {
-            document
-                .querySelectorAll(".left .item.active")
-                .forEach((o) => o.classList.remove("active"));
-            e.target.classList.add("active");
-        }
-    }, 50);
+    rightRef.value.scrollTo(0, rightRefs[i].offsetTop + 1);
 };
 const onRightScroll = (e) => {
     for (let i = 0; i < rightRefs.length; i++) {
@@ -99,8 +90,8 @@ const onRightScroll = (e) => {
                     leftRef.value.clientHeight +
                     leftRefs[i].clientHeight;
             }
+            break;
         }
-        //break;
     }
 };
 </script>
