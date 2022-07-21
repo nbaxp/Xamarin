@@ -11,6 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xamarin", "src\xamarin\xama
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xamarin.Rersources", "src\xamarin.Rersources\xamarin.Rersources.csproj", "{323DAE3E-95E3-4063-9281-6EA39DB901A2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{DB17ACA0-8A75-47C6-BDBF-29F4A07CD064}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

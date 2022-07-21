@@ -3,6 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="xamarin.MainPage">
     <AbsoluteLayout BackgroundColor="LightBlue" AnchorX="0" AnchorY="0">
-        <WebView x:Name="webView" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" />
+        <WebView x:Name="webView" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="LightBlue"  />
     </AbsoluteLayout>
 </ContentPage>

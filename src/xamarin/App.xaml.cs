@@ -1,6 +1,4 @@
 ﻿using EmbedIO;
-using System.Diagnostics;
-using System.Reflection;
 using System.Threading.Tasks;
 using xamarin.Rersources;
 using Xamarin.Forms;
@@ -16,7 +14,7 @@ namespace xamarin
             {
                 using (var server = new WebServer(HttpListenerMode.EmbedIO, "http://*:8080"))
                 {
-                    server.WithEmbeddedResources("/", typeof(Resource).Assembly, "xamarin.Rersources.wwwroot");
+                    server.WithEmbeddedResources("/", typeof(Resource).Assembly, "xamarin.Rersources.nodejs.dist");
                     await server.RunAsync();
                 }
             });
@@ -25,7 +23,6 @@ namespace xamarin
 
         protected override void OnStart()
         {
-
         }
 
         protected override void OnSleep()
