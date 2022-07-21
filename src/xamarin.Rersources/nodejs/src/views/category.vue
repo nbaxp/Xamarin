@@ -135,4 +135,7 @@ const onRightScroll = (e) => {
 #category .right .item {
     border-bottom: 1px solid #fff;
 }
+#category .right .item:last-child {
+    min-height: calc(100% + 1px);
+}
 </style>
