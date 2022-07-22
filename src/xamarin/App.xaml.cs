@@ -1,4 +1,5 @@
 ﻿using EmbedIO;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using xamarin.Rersources;
 using Xamarin.Forms;
@@ -12,7 +13,10 @@ namespace xamarin
             InitializeComponent();
             Task.Factory.StartNew(async () =>
             {
-                using (var server = new WebServer(HttpListenerMode.EmbedIO, "http://*:8080"))
+                var options = new WebServerOptions()
+                .WithMode(HttpListenerMode.Microsoft)
+                .WithUrlPrefix("http://*:8080");
+                using (var server = new WebServer(options))
                 {
                     server.WithEmbeddedResources("/", typeof(Resource).Assembly, "xamarin.Rersources.nodejs.dist");
                     await server.RunAsync();

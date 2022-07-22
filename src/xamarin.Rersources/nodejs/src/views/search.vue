@@ -16,12 +16,13 @@
             <span>搜索</span>
         </template>
     </van-nav-bar>
-    <product></product>
+    <van-button type="primary" url="http://internal.com/test?a=q1&b=q2"
+        >URL 跳转</van-button
+    >
 </template>
 
 <script setup>
 import { reactive } from "vue";
-import product from "~/components/product.vue";
 
 const model = reactive({
     query: null,
