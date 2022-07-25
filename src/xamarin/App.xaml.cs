@@ -1,5 +1,4 @@
 ﻿using EmbedIO;
-using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using xamarin.Rersources;
 using Xamarin.Forms;
@@ -18,7 +17,7 @@ namespace xamarin
                 .WithUrlPrefix("http://*:8080");
                 using (var server = new WebServer(options))
                 {
-                    server.WithEmbeddedResources("/", typeof(Resource).Assembly, "xamarin.Rersources.nodejs.dist");
+                    server.WithEmbeddedResources("/xamarin/", typeof(Resource).Assembly, "xamarin.Rersources.nodejs.dist");
                     await server.RunAsync();
                 }
             });

@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="xamarin.BrowserPage">
     <StackLayout BackgroundColor="#fff">
-        <Editor x:Name="editor" Text="https://www.baidu.com/" />
+        <Editor x:Name="editor" Text="https://examples.nbaxp.com/xamarin/" />
         <Button x:Name="button" Text="GO" />
-        <WebView x:Name="webview" WidthRequest="1000" HeightRequest="1000" Source="https://www.baidu.com/" />
+        <WebView x:Name="webview" WidthRequest="1000" HeightRequest="1000" />
     </StackLayout>
 </ContentPage>

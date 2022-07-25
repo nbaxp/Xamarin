@@ -1,4 +1,5 @@
 ﻿using System;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace xamarin
@@ -9,7 +10,8 @@ namespace xamarin
         {
             InitializeComponent();
             this.webView.Navigating += WebView_Navigating;
-            this.webView.Source = "http://localhost:8080/";
+            this.webView.Source = "http://localhost:8080/xamarin/";
+            //Permissions.CheckStatusAsync<Permissions.Camera>().Wait();
         }
 
         private async void WebView_Navigating(object sender, WebNavigatingEventArgs e)

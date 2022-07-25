@@ -1,1 +1,1 @@
-404
+<template>404</template>

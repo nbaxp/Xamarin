@@ -6,9 +6,10 @@ import { VantResolver } from 'unplugin-vue-components/resolvers';
 import WindiCSS from 'vite-plugin-windicss';
 import path from 'path';
 
-const pathSrc = path.resolve(__dirname, 'src');
+const pathSrc = path.resolve(__dirname, './src');
 
 export default defineConfig({
+    base: '/xamarin/',
     resolve: {
         alias: {
             '~/': `${pathSrc}/`,

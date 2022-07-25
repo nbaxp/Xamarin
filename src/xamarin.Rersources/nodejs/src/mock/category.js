@@ -12,7 +12,7 @@ for (let i = 0; i < 30; i++) {
             price: `${(i + 1) * (j + 1) + 10}.99`,
             vipPrice: `${(i + 1) * (j + 1)}.00`,
             desc: '商品简介',
-            icon: '/images/product/1.webp',
+            icon: './images/product/1.webp',
             number: 1
         });
     }

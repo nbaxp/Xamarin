@@ -33,10 +33,10 @@ import topProducts from "~/mock/product.js";
 // swipe
 const images = [];
 for (let i = 0; i < 6; i++) {
-    images.push(`/images/swipe/${i + 1}.jpg`);
+    images.push(`./images/swipe/${i + 1}.jpg`);
 }
 // category
-const getCategoryImage = (name) => `/images/category/${name}.webp`;
+const getCategoryImage = (name) => `./images/category/${name}.webp`;
 const topCategories = [
     { name: "少儿童书", icon: getCategoryImage("1"), to: "" },
     { name: "学习用书", icon: getCategoryImage("2"), to: "" },
